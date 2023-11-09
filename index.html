@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Navigation Bar Using Bootstrap Nav Component -->
+  <header class="navigation">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container">
+        <nav class="navbar bg-body-tertiary">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="Images/Logo_black.png" class="img-fluid" width="30" height="24">
+              Cassandra Whitley
+            </a>
+          </div>
+        </nav>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Skills</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Department of Labor</a></li>
+                <li><a class="dropdown-item" href="#">St. Patty's Association</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z">
+        </path>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z">
+        </path>
+        <path
+          d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z">
+        </path>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path
+          d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z">
+        </path>
+      </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+        aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+          <use href="#sun-fill"></use>
+        </svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light"
+            aria-pressed="true">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+              <use href="#sun-fill"></use>
+            </svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+            aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+              <use href="#moon-stars-fill"></use>
+            </svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto"
+            aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+              <use href="#circle-half"></use>
+            </svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Hero Banner -->
+    <div class="container py-5">
+      <div _ngcontent-iex-c39="" class="page-header-ui-content pt-10">
+        <div _ngcontent-iex-c39="" class="container px-5">
+          <div _ngcontent-iex-c39="" class="row gx-5 align-items-center">
+            <div _ngcontent-iex-c39="" data-aos="fade-up" class="col-lg-6 aos-init aos-animate">
+              <h1 _ngcontent-iex-c39="" class="page-header-ui-title">Redesigning the Department of Labor (DOL) Website
+                Navigation</h1>
+              <p _ngcontent-iex-c39="" class="page-header-ui-text mb-5">The core focus of the project was to redesign
+                the Department of Labor's website to address user challenges in efficiently finding the resources they
+                need. These challenges included a crowded and elongated menu that made it cumbersome for users to access
+                items located below the fold. My contributions in defining user flows, conducting card sorting
+                exercises, and participating in sitemap development were instrumental in improving user navigation and
+                content accessibility. We prioritized the menu navigation, recognizing it as the primary point of
+                interaction for users. Through card sorting and usability testing we were able to simplfy the navigation
+                menu and tailor it to the different audiences that would most frequently visit the page. </p>
+            </div>
+            <div _ngcontent-iex-c39="" data-aos="fade-up" data-aos-delay="50"
+              class="col-lg-6 d-none d-lg-block aos-init aos-animate"><img _ngcontent-iex-c39=""
+                src="Images/Prototype_DOL.png" class="img-fluid"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Project Detail- Overview -->
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6 p-3">
+          <div class="h-100 p-5 text-bg-dark rounded-3">
+            <h2>What</h2>
+            <p>The DOL's mission is to foster, promote, and develop the welfare of the wage earners, job seekers, and
+              retirees of the United States; improve working conditions; advance opportunities for profitable
+              employment; and assure work-related benefits and rights. </p>
+          </div>
+        </div>
+        <div class="col-md-6 p-3">
+          <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+            <h2>Why</h2>
+            <p>The project centered on the redesign of the Department of Labor (DOL) website, with a primary focus on
+              enhancing the navigation menu. The DOL website contained a vast amount of valuable information, but the
+              existing navigation presented challenges for users. Specifically, the navigation menu extended below the
+              fold, making it challenging for users to access critical content. Furthermore, there was a lack of clear
+              content grouping and prioritization, beyond broad categories like "Topics" and "Agencies." This project
+              aimed to address these usability issues and provide an improved user experience for visitors to the DOL
+              website.</p>
+          </div>
+        </div>
+      </div>
+      <div class="h-100 p-1 text-bg-dark rounded-3 d-flex gap-2 justify-content-center py-2 ">
+        <h4>My Contributions
+          :
+        </h4>
+        <span class="badge bg-light-subtle border border-light-subtle text-light-emphasis rounded-pill">User Flow</span>
+        <span class="badge bg-light-subtle border border-light-subtle text-light-emphasis rounded-pill">Card
+          Sorting</span>
+        <span class="badge bg-light-subtle border border-light-subtle text-light-emphasis rounded-pill">Sitemap
+          Development</span>
+        <span
+          class="badge bg-light-subtle border border-light-subtle text-light-emphasis rounded-pill">Prototyping</span>
+
+      </div>
+      <!-- User Research -->
+      <div class="row align-items-md-stretch">
+        <div class="col-md-9 p-3">
+          <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+            <h2>User Research</h2>
+            <p>In the early stages of this project, we conducted user interviews using the original site as a reference
+              point to gain insights into the user experience. Our primary user persona, Rosemary, was the central
+              figure in our design process. Her specific needs included easy access to information about SPA events, the
+              ability to sign up her class or school to participate in the parade, insight into budget allocation, and a
+              desire to engage with the organization. Additionally, we conducted a heuristic evaluation to identify
+              usability issues and design flaws within the existing website. A key contribution I made was leading a
+              competitive analysis, which, along with insights from low-fidelity usability tests, allowed us to
+              prioritize updates to align with both stakeholder and user needs. Throughout the project, Rosemary's
+              unique needs and pain points guided our design decisions, ensuring that the redesigned website effectively
+              addressed critical issues and catered to the preferences of users like her.</p>
+          </div>
+        </div>
+        <div class="col-md-3 p-3">
+
+          <img class="h-100 p-1 img-fluid" src="Images/Prototype_DOL.png">
+        </div>
+      </div>
+      <!-- Definition & Synthesis -->
+      <div class="row align-items-md-stretch">
+        <div class="col-md-3 p-3">
+          <img class="h-100 p-1 img-fluid" src="Images/Prototype_DOL.png">
+        </div>
+        <div class="col-md-9 p-3">
+          <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+            <h2>Definition & Synthesis</h2>
+            <p>Our user research process was comprehensive and focused on enhancing the DOL website's user experience.
+              Key components included:</p>
+
+            <p>Proto-Persona: We developed a proto-persona to gain a better understanding of our target audience. This
+              proto-persona represented an archetype of our typical website user, allowing us to design with their needs
+              in mind.</p>
+
+            <p>User Paths Definition: We defined clear user paths, which were the optimal routes for users to access
+              information. These paths served as the basis for improving navigation and content accessibility.</p>
+
+            <p>Usability Testing: To validate our design decisions and user paths, we conducted usability tests. This
+              involved observing real users interacting with the website to identify pain points and areas for
+              improvement.</p>
+
+            <p>Quadrant Analysis: After conducting usability tests, we created a quadrant analysis, plotting
+              improvements based on two dimensions: user importance (X-axis) and DOL importance (Y-axis). This approach
+              allowed us to prioritize enhancements, focusing on changes that mattered most to users and aligned with
+              the DOL's objectives. </p>
+
+            <p>This user research process provided valuable insights and data-driven guidance for our redesign efforts,
+              ensuring that the changes made were both user-centric and aligned with the DOL's mission.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ideation -->
+      <div class="row align-items-md-stretch">
+        <div class="col-md-9 p-3">
+          <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+            <h2>Ideation</h2>
+            <p>In the absence of site analytics and direct collaboration with the DOL (as this was a class assignment),
+              our ideation process primarily relied on our own assessments and the usability tests we conducted. To
+              better understand our users' needs and preferences, we employed the following methods:</p>
+
+            <p>User-Centric Exploration: We conducted user interviews, surveys, and usability tests to gain insights
+              into user preferences and pain points. These activities allowed us to understand how users interacted with
+              the website, despite the absence of site analytics.</p>
+
+            <p>Card Sorting and Information Architecture: Through card sorting exercises, we probed how users naturally
+              grouped and categorized content. This exercise was pivotal in shaping the information architecture and
+              optimizing the menu navigation, based on the information we had at hand.</p>
+
+            <p>Content Prioritization: In our ideation process, we deliberated the separation of content for employers
+              and non-employers, including workers and the unemployed. Although we didn't have direct access to site
+              analytics, we prioritized content organization based on our own assessment and understanding of user
+              importance and relevance.</p>
+
+            <p>Navigation Styles: We also explored different navigation styles, specifically debating between side
+              navigation and traditional top navigation. Our choices were guided by what we perceived as user-friendly,
+              taking into account our usability test findings.</p>
+          </div>
+        </div>
+        <div class="col-md-3 p-3">
+
+          <img class="h-100 p-1 img-fluid" src="Images/Prototype_DOL.png">
+        </div>
+      </div>
+
+      <!-- Definition & Synthesis -->
+      <div class="row align-items-md-stretch">
+        <div class="col-md-3 p-3">
+          <img class="h-100 p-1 img-fluid" src="Images/Prototype_DOL.png">
+        </div>
+        <div class="col-md-9 p-3">
+          <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+            <h2>Prototyping</h2>
+            <p>Our prototyping process began with user flow creation and low-fidelity digital prototyping, progressing
+              into high-fidelity prototyping. We focused on enhancing menu button names for clarity and developed a
+              visual design system for a cohesive user interface.</p>
+
+            <p>We created a user flow based on the results from our user flow tests, aiming to ensure a logical and
+              efficient path for users to access information on the DOL website. We then transitioned to a low-fidelity
+              digital prototype. This prototype was used in usability tests to assess the effectiveness of our
+              navigation and menu button names. We made adjustments to enhance clarity and usability based on user
+              feedback.</p>
+
+            <p>We developed a visual design system inspired by a mood board for styling, ensuring a cohesive and
+              visually appealing user interface. Using our style guide we developed a hi-fi prototype, providing a
+              visual representation of our proposed changes to the DOL website.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="container">
+        <footer class="py-3 my-4 ">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Skills</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Projects</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+          </ul>
+          <p class="text-center text-body-secondary">© 2023 Cassandra Whitley</p>
+        </footer>
+      </div>
+
+
+
+  </body>
+
+  <script src="js/index.js"></script>
+
+</html>
